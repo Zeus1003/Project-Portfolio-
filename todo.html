@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Todo List</title>
+    <meta name="author" content="PUT YOUR NAME HERE">
+    <meta name="description" content="Use ToDo list app to explore and interact with the DOM">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <h1>My Todo List</h1>
+<form>
+    <label for="input-task">Task Name:</label>
+    <input type="text" placeholder="Do Assignment" id="input-task">
+    <input type="button" value="Add Task" id="add-task"> 
+</form>
+  <ul id="todo-list">
+    
+  </ul> 
+
+  <button type="button" id="show-all">All</button>
+  <button type="button" id="show-active">Active</button>
+  <button type="button" id="show-completed">Completed</button>
+
+<script type="text/template" id="list-item-template">
+<li class="task">
+    <label>
+        <input type="checkbox" class="checkbox">
+        <span class="task-name"><!-- TASK_NAME --><span>
+    </label>
+
+</li>
+</script>
+</body>
+<script src="js/script.js"></script>
+
+
+</html>
